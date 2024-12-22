@@ -77,6 +77,29 @@ class MyApp extends StatelessWidget {
                 'Hello, row',
                 style: TextStyle(fontSize: 22.2, fontWeight: FontWeight.normal),
               ),
+
+              Card(
+                color: Colors.amber,
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 20, horizontal: 50),
+                  child: Text('1234'),
+                ),
+              ),
+
+              Container(
+                width: 300,
+                height: 70,
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'name',
+                    hintText: 'enter name',
+                    contentPadding:
+                        EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                  ),
+                ),
+              )
             ],
           ),
           floatingActionButton: FloatingActionButton(

@@ -69,23 +69,24 @@ class MyApp extends StatelessWidget {
                 ),
 
                 const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Row(
-                      children: [
-                        Icon(Icons.calendar_month),
-                        SizedBox(width: 8),
-                        Text(
-                          'วันที่ชาร์จ',
-                          style: TextStyle(
-                              fontSize: 18.0, fontWeight: FontWeight.normal),
-                        ),
-                      ],
+                    Icon(
+                      Icons.calendar_month,
+                      size: 30,
                     ),
+                    SizedBox(width: 20),
+                    Expanded(
+                      child: Text(
+                        'วันที่ชาร์จ',
+                        style: TextStyle(
+                            fontSize: 18.0, fontWeight: FontWeight.normal),
+                      ),
+                    ),
+                    SizedBox(width: 20),
                     Text(
-                      '9 กันยายน 2567',
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                      '12 dec 24',
+                      style: TextStyle(fontSize: 18.0),
                     ),
                   ],
                 ),
