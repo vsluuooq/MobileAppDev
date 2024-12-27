@@ -314,4 +314,27 @@ class MyApp extends StatelessWidget {
           ),
         ));
   }
+
+  // Method สำหรับสร้างแถวแบบข้อความธรรมดา
+  Widget buildStaticRow(String labelText, String value) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Expanded(
+          child: Text(
+            labelText,
+            style: const TextStyle(
+              fontSize: 15.0,
+              fontWeight: FontWeight.normal,
+            ),
+          ),
+        ),
+        const SizedBox(width: 20),
+        Text(
+          value,
+          style: const TextStyle(fontSize: 15.0),
+        ),
+      ],
+    );
+  }
 }
